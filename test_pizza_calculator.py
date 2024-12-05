@@ -1,4 +1,5 @@
-from pizza_calculator import calculate_pizzas, serving_size, calculate_cost
+from pizza_calculator import calculate_pizzas, serving_size, calculate_cost, main
+from unittest.mock import patch
 import pytest
 
 def test_calculate_pizzas():
@@ -24,3 +25,8 @@ def test_calculate_cost():
     assert pytest.approx(calculate_cost(1, 0, 2, 15), 0.01) == 33.63  # 1 Large, 2 Small, 15% tip
     assert pytest.approx(calculate_cost(1, 1, 0, 10), 0.01) == 28.14  # 1 Large, 1 Medium, 10% tip
     assert pytest.approx(calculate_cost(3, 1, 0, 20), 0.01) == 88.85  # 3 Large, 1 Medium, 20% tip
+
+def test_main_function():
+    with patch('builtins.input', side_effect=['9']):
+        result = main.main()
+        assert result == "Hello John! You are 25 years old."
