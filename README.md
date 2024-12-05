@@ -1,7 +1,4 @@
 # Lab Assignment: Pizza Calculator
-
-This lab must be completed using pair programming and is due on Thursday by 9:00 AM.
-
 ---
 
 ## Learning Objectives and Standards
