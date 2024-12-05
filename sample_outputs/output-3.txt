@@ -1,0 +1,9 @@
+Please enter how many guests to order for: 25
+
+3 large pizzas, 1 medium pizzas, and 0 small pizzas will be needed.
+
+A total of 1570.80 square inches of pizza will be ordered (62.83 per guest).
+
+Please enter the tip as a percentage (i.e. 10 means 10%): 20
+
+The total cost of the event will be: $88.85
